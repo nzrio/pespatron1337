@@ -1,5 +1,5 @@
 
-class TK_41:
+class GG:
     """Тестовий клас, зараз реалізуємо опис студента
     
     ---
@@ -30,17 +30,17 @@ class TK_41:
         self._scholarship = 0
 
         self.var_lover_case = "Перазаписали класові змінну"
-        TK_41.total_students += 1
-        TK_41.total_marks += mark
+        GG.total_students += 1
+        GG.total_marks += mark
 
 
     def __del__(self):
         print("Відрахували студента")
-        TK_41.total_students -= 1
+        GG.total_students -= 1
 
     @property
     def college_raiting(self):
-        return TK_41.total_marks / TK_41.total_students
+        return GG.total_marks / GG.total_students
 
     @property
     def name(self):
@@ -58,7 +58,7 @@ class TK_41:
         return f"Привіт {a}"
     
     def __repr__(self):
-        return "Представлення обєкту Студент, його задають: TK_41(surname, name, mark)"
+        return "Представлення обєкту Студент, його задають: GG(surname, name, mark)"
     
     def __len__(self):
         return len(self.surname)
